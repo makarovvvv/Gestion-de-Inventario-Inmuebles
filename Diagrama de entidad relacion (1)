@@ -1,0 +1,44 @@
+<mxfile host="app.diagrams.net" modified="2023-05-18T17:42:35.644Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="8lBKs79vcBX6JQBc8s98" version="21.3.2" type="google">
+  <diagram name="Página-1" id="1iY-lnriHXzEo7FiwGSn">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="212ZimbvGAy_Bp9xS3iU-5" value="Mueble" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="170" y="400" width="140" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="212ZimbvGAy_Bp9xS3iU-6" value="+ ID: int&lt;br&gt;&lt;br&gt;+tipoMueble: varchar&lt;br&gt;&lt;br&gt;+color: varchar&lt;br&gt;&lt;br&gt;&lt;i&gt;+sector: int&lt;/i&gt;&lt;br&gt;&lt;br&gt;+fechaEntrada: date&lt;br&gt;&lt;br&gt;+despachado: boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="212ZimbvGAy_Bp9xS3iU-5">
+          <mxGeometry y="26" width="140" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="212ZimbvGAy_Bp9xS3iU-9" value="Sector" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="400" y="440" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="212ZimbvGAy_Bp9xS3iU-10" value="+numero: int&lt;br&gt;&lt;br&gt;+descripcion: varchar" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="212ZimbvGAy_Bp9xS3iU-9">
+          <mxGeometry y="26" width="140" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="212ZimbvGAy_Bp9xS3iU-13" value="Administrador" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="290" y="120" width="170" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="212ZimbvGAy_Bp9xS3iU-16" value="+ID: int&lt;br&gt;&lt;br&gt;+nombre: varchar&lt;br&gt;&lt;br&gt;+apellido: varchar&lt;br&gt;&lt;br&gt;+dni: int&lt;br&gt;&lt;br&gt;+email: varchar&lt;br&gt;&lt;br&gt;+contraseña: varchar&lt;br&gt;&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="212ZimbvGAy_Bp9xS3iU-13">
+          <mxGeometry y="26" width="170" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="212ZimbvGAy_Bp9xS3iU-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.388;exitY=1.017;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="212ZimbvGAy_Bp9xS3iU-16" target="212ZimbvGAy_Bp9xS3iU-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="350" as="sourcePoint" />
+            <mxPoint x="290" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="356" y="360" />
+              <mxPoint x="240" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="212ZimbvGAy_Bp9xS3iU-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.322;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.014;entryY=0.266;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="212ZimbvGAy_Bp9xS3iU-6" target="212ZimbvGAy_Bp9xS3iU-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="330" as="sourcePoint" />
+            <mxPoint x="440" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
